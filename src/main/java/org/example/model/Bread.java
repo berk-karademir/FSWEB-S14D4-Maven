@@ -44,7 +44,7 @@ public class Bread extends ProductForSale{
                         "Details of " +  getClassName().toLowerCase() + " : " + getDescription() + "." + "\n" +
                         "How much the " + getClassName().toLowerCase() + " weigh ? " + getWeight() + " gr." + "\n" +
                         "What kind of flour the " + getClassName().toLowerCase() + " made from ? " + getFlourType() + "." + "\n" +
-                        "Is the " + getClassName().toLowerCase() + " organic ? " + (isOrganic() ? "Yes, 100% organic, 0 additive" : "No, it is not organic.") + "." + "\n" +
+                        "Is the " + getClassName().toLowerCase() + " organic ? " + (isOrganic() ? "Yes, 100% organic, 0 additive" : "No, it is not organic.") + "\n" +
                         "How much is this " + getClassName().toLowerCase() + " ? $" + getPrice() + "\n"
         );
     }
