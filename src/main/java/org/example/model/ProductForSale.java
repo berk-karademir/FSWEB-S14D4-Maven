@@ -28,9 +28,18 @@ public abstract class ProductForSale {
     //getSalesPrice method
 
     public double getSalesPrice(int quantity) {
-        return (this.price) * quantity;
+        return price * quantity;
     }
 
     public abstract void showDetails();
 
+
+    @Override
+    public String toString() {
+        return "ProductForSale{" +
+                "type='" + type + '\'' +
+                ", price=" + price +
+                ", description='" + description + '\'' +
+                '}';
+    }
 }

@@ -1,6 +1,10 @@
 package org.example.rpg;
 
+import org.example.rpg.utils.Constant;
+
 public interface Poisonable {
 
-    abstract double poison();
+     default double poison() {
+         return Constant.POISON_PERCENTAGE;
+     }
 }

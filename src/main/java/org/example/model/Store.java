@@ -3,10 +3,11 @@ package org.example.model;
 public class Store {
     public static void main(String[] args) {
 
+        // create array
         ProductForSale[] products = new ProductForSale[7];
 
 
-        ProductForSale cokeOnSale = new Coke("Coca Cola 4 x 250 Ml Zero Sugar", 90.00,
+        ProductForSale cokeOnSale = new Coke("4 x 250 Ml Package", 90.00,
                                             "Şekersiz kola, 4 adet 250 ml", true,"Kutu");
 
 
@@ -15,7 +16,7 @@ public class Store {
 
 
 
-        ProductForSale chocOnSale = new Chocolate("55% Bitter Chocolate",40.90,"Taze sütlü",
+        ProductForSale chocOnSale = new Chocolate("Bitter Chocolate",40.90,"Taze sütlü",
                                                     false,"Turkey");
 
 

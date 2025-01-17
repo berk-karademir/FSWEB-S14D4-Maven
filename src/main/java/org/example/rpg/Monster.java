@@ -1,6 +1,6 @@
 package org.example.rpg;
 
-public abstract class Monster implements Bleedable, Poisonable{
+public abstract class Monster{
     private String name;
     private int hitPoints;
     private double damage;
@@ -23,8 +23,9 @@ public abstract class Monster implements Bleedable, Poisonable{
         return damage;
     }
 
-    public double attack() {
-        return getDamage() + bleed() + poison();
-    }
 
+    public abstract double attack();
+    public abstract boolean hasBleedingDmg();
+    public abstract boolean hasPoisonDmg();
+    
 }

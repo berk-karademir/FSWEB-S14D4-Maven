@@ -30,6 +30,7 @@ public class Chocolate extends ProductForSale{
     }
 
 
+    // || super.toString() + this
     @Override
     public void showDetails() {
         System.out.println(
@@ -38,7 +39,7 @@ public class Chocolate extends ProductForSale{
                         "What kind of " + getClassName().toLowerCase() + " is this ? " + getType() + "." + "\n" +
                         "Details of " +  getClassName().toLowerCase() + " : " + getDescription() + "." + "\n" +
                         "Is the " + getClassName().toLowerCase() + " ok for diabetics ? " + (isZeroSugar() ? "Yes, it has no sugar in it." : "No, it has a few kinds of sugars in it.") + "\n" +
-                        "Which country the " + getClassName().toLowerCase() + " is made in" + "." + " It is made in " + productionCountry() + ". \n" +
+                        "Which country the " + getClassName().toLowerCase() + " is made in" + "." + " It is made in " + productionCountry() + ". \n"  +
                         "How much is this " + getClassName().toLowerCase() + " ? $" + getPrice() + "\n"
         );
     }

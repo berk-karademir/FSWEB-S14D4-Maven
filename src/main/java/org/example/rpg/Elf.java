@@ -9,16 +9,22 @@ public class Elf extends Monster implements Poisonable{
 
 
     @Override
-    public double bleed() {
-        return 0;
+    public double poison() {
+        return  getDamage() * Poisonable.super.poison();
     }
 
     @Override
-    public double poison() {
-        return 0.20;
+    public double attack() {
+        return getDamage() + this.poison();
     }
 
-    public double attack() {
-        return getDamage() + bleed() + poison();
+    @Override
+    public boolean hasBleedingDmg() {
+        return false;
+    }
+
+    @Override
+    public boolean hasPoisonDmg() {
+        return true;
     }
 }
